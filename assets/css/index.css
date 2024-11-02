@@ -1,0 +1,49 @@
+@import url(reset.css);
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color:#ffffff;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: #009951;
+}
+
+.header-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #009951;
+    height: 100px;
+}
+
+.div-opcoes{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.div-opcoes ul{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 50px;
+}
+
+.div-opcoes a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.div-imagem{
+    display: flex;
+    padding: 10px 0px 10px 100px;
+}
+
+
