@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #009951; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centralizar texto */
+}
+
+nav {
+    margin-left: 60%;
+}
+
+nav ul {
+    list-style-type: none; /* Remove as marcas da lista */
+    padding: 0; /* Remove o preenchimento */
+}
+
+nav ul li {
+    display: inline; /* Exibir itens em linha */
+    margin: 0 15px; /* Espaçamento entre os itens */
+}
+
+nav ul li a {
+    color: white; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+#contato{
+    background-color: white;
+}
