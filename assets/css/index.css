@@ -35,11 +35,20 @@ html{
     gap: 30px;
 }
 
-.div-opcoes ul li:nth-child(7){
+#primeiro-button-contato{
     background-color: #c3f9b1;
     padding: 5px;
     border-radius: 5px;
     color: #009951;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#primeiro-button-contato:hover{
+    background-color: #009951;
+    transition: 0.5s ease;
+    color:  #c3f9b1;
 }
 
 .div-opcoes a{
@@ -64,6 +73,7 @@ html{
 .div-imagem i:hover{
     color: #ff0000;
     cursor: pointer;
+    transition: color 0.5s ease;
 }
 
 .assunto-principal{
