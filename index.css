@@ -1,8 +1,13 @@
+
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-image: url(https://github.com/dev-ezequias/landingpage-idosos/blob/main/assets/imagens/rawpixel-com-lifeofpix-rawpixelcom1624-306733.jpg?raw=true);
-    
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed; 
 }   
 
 
@@ -11,20 +16,28 @@ header {
     color: white; /* Cor do texto */
     padding: 20px; /* Espaçamento interno */
     text-align: center; /* Centralizar texto */
+    display: flex;
 }
 
 nav {
-    margin-left: 60%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
 }
 
 nav ul {
     list-style-type: none; /* Remove as marcas da lista */
-    padding: 0; /* Remove o preenchimento */
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0%;
+    padding: 0% ;
 }
 
 nav ul li {
-    display: inline; /* Exibir itens em linha */
-    margin: 0 15px; /* Espaçamento entre os itens */
+    
+    align-items: center;
 }
 
 nav ul li a {
@@ -32,9 +45,9 @@ nav ul li a {
     text-decoration: none; /* Remove sublinhado */
 }
 
-nav ul li a:hover {
-    text-decoration: underline; /* Sublinhado ao passar o mouse */
-}
+/*nav ul li a:hover {
+    text-decoration: underline;
+} */
 
 .texto1 {
     display: flex;
@@ -64,8 +77,11 @@ nav ul li a:hover {
     }
 
 
+
+
 h1 {
     color: white;
+    text-decoration: underline;
 }
 
 h5 {
@@ -79,6 +95,7 @@ h5 {
 .titc {
     text-align: center;
     margin-bottom: 50px;
+    
     
 }
 
@@ -110,4 +127,54 @@ h5 {
 .fots2 img {
     height: 370px;
     width: 90%;
+}
+
+.contato {
+    text-align: center;
+}
+
+.ctit {
+    margin-bottom: 60px;
+}
+
+
+
+.conts {
+    display: flex;
+}
+
+.ctext {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cfot {
+    width: 70%;
+}
+
+.cfot img {
+    width: 70%;
+    height: 85%;
+    
+}
+
+.p {
+
+}
+
+
+
+
+
+
+.ctext img {
+    width: 50px;
+    
+}
+
+.icone {
+    font-size: 50px;
+    text-align: left;
+    width: 30%;
 }
