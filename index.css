@@ -1,7 +1,10 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-}
+    background-image: url(https://github.com/dev-ezequias/landingpage-idosos/blob/main/assets/imagens/rawpixel-com-lifeofpix-rawpixelcom1624-306733.jpg?raw=true);
+    
+}   
+
 
 header {
     background-color: #009951; /* Cor de fundo */
@@ -33,6 +36,78 @@ nav ul li a:hover {
     text-decoration: underline; /* Sublinhado ao passar o mouse */
 }
 
-#contato{
-    background-color: white;
+.texto1 {
+    display: flex;
+    
+
+}
+
+.img1 {
+    height: 50%;
+    width: 50%;
+    margin-right: 10px;
+    margin-top: 70px;
+    margin-left: 10px;
+}
+
+.img1 img{
+    width: 600px;
+    height: 300px;
+}
+
+.introdução {
+    height: 50%;
+    width: 40%;
+    margin-left: 10px;
+    margin-top: 70px;
+    
+    }
+
+
+h1 {
+    color: white;
+}
+
+h5 {
+    color: white;
+}
+
+.cuidados {
+    margin-top:  200px;
+}
+
+.titc {
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+.tita {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 70px;
+}
+
+.fots {
+    display: flex;
+}
+
+.fots1 {
+    width: 50%;
+    margin: 30px;
+}
+
+.fots2 {
+    width: 50%;
+    margin: 30px;
+    
+}
+
+.fots1 img {
+    width: 90%;
+}
+
+.fots2 img {
+    height: 370px;
+    width: 90%;
 }
