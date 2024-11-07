@@ -6,12 +6,16 @@ html{
 
 ::-webkit-scrollbar{
     width: 10px;
-    background-color:#ffffff;
+    background-color:#f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb{
     width: 10px;
     background-color: #009951;
+}
+
+body{
+    background-color: #f1f1f1;
 }
 
 .header-menu{
@@ -20,46 +24,92 @@ html{
     align-items: center;
     background-color: #009951;
     height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 
 .div-opcoes{
     display: flex;
-    width: 100%;
-    justify-content: center;
+    width: 80%;
+    justify-content: flex-start;
 }
 
 .div-opcoes ul{
     display: flex;
+    align-items: center;
     text-decoration: none;
     list-style-type: none;
-    gap: 30px;
-}
-
-#primeiro-button-contato{
-    background-color: #c3f9b1;
-    padding: 5px;
-    border-radius: 5px;
-    color: #009951;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.5s ease;
-}
-
-#primeiro-button-contato:hover{
-    background-color: #009951;
-    transition: 0.5s ease;
-    color:  #c3f9b1;
+    gap: 50px;
 }
 
 .div-opcoes a{
     text-decoration: none;
+    position: relative;
     color: #ffffff;
-    font-weight: 500;
-    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.div-opcoes a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #80de6a;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+.div-opcoes a:hover::after{
+    width: 100%;
+}
+
+#primeiro-button-contato {
+    background: #c3f9b1;
+    border: 1px solid  #c3f9b1;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #009951;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Poppins,sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+#primeiro-button-contato:hover,
+#primeiro-button-contato:active {
+    background-color: initial;
+    background-position: 0 0;
+    color:  #ffffff;
+    text-decoration: none;
+}
+
+#primeiro-button-contato::after {
+    content: none; 
+}
+
+#primeiro-button-contato:active {
+    opacity: .5;
 }
 
 .div-imagem{
     display: flex;
+    justify-content: center;
+    width: 20%;
     padding: 10px 0px 10px 50px;
 }
 
@@ -68,17 +118,40 @@ html{
     color: #ffffff;
     transition: color 0.5s ease;
     cursor: pointer;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
 }
 
 .div-imagem i:hover{
-    color: #ff0000;
+    color: #c3f9b1;
+    border: 1px solid #c3f9b1;
     cursor: pointer;
     transition: color 0.5s ease;
 }
 
+.div-imagem{
+    display: flex;
+    font-size: 50px;
+    animation: pulseEffect 1s ease-in-out infinite;
+}
+
+@keyframes pulseEffect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); 
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 .assunto-principal{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -92,9 +165,10 @@ html{
     left: 0;
     width: 100%;
     height: 100vh;
-    background-image: url(../imagens/rawpixel-com-lifeofpix-rawpixelcom1624-306733.jpg);
+    background-image: url(../imagens/—Pngtree—doctor\ gives\ the\ elderly\ _4200892.png);
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: -1%;
     opacity: .8;
     z-index: 0;
 }
@@ -126,6 +200,20 @@ html{
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
+.conteudo-principal p, h1{
+    position: relative;
+    animation: conteudo-principal 1.5s ease-out forwards ;
+}
+
+@keyframes conteudo-principal {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
 #cuidados{
     font-size: 50px;
     color: #009951;
@@ -145,21 +233,37 @@ html{
 .conteudo-secundario{
     display: flex;
     flex-direction: column;
-    align-items: start;
     margin: 50px 50px 0px 50px;
-    border: 3px solid #c3f9b1;
-    background-color: #c3f9b1;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+}
+
+.conteudo-secundario {
+    animation: grow 1.5s ease-out forwards;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(0.5); /* Começa pequeno */
+    }
+    100% {
+        transform: scale(1); /* Cresce até o tamanho normal */
+    }
 }
 
 .conteudo-secundario h2{
-    color: #80de6a;
+    color: #009951;
     border-left: 5px solid #009951;
     margin: 5px 0px 15px 2px;
     padding-left: 15px;
     text-transform: uppercase;
+}
+
+.conteudo-secundario h3{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .conteudo-secundario p{
@@ -167,48 +271,76 @@ html{
     color: #009951;
     padding: 10px 0px 0px 0px;
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 400;
+    background-color:#adff95;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    
 }
 
 .conteudo-secundario span{
-    color: #80de6a;
-    font-weight: 700;
+    color: #000000;
+    font-weight: 400;
+    margin-top: 20px;
 }
 
 .conteudo-secundario img{
-    width: 600px;
-    margin: 30px 0px 30px 50px;
+    width: 1000px;
+    height: 700px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.span-conteudo-secundario{
+    font-size: 30px;
 }
 
 .conteudo-contato{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px 50px 50px 50px;
-    background-color: #c3f9b1;
-    border-radius: 10px;
+    background-color:transparent;
+    border-radius: 10px 10px 0px 0px;
     padding: 30px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 0px 80px 0px 80px;
+    
+}
+
+.conteudo-contato {
+    position: relative;
+    animation: slideIn 1.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        left: -100%; 
+    }
+    100% {
+        left: 0; 
+    }
 }
 
 .textoeimagem{
     display: flex;
+    align-items: center;
 }
 
 .textoeimagem img{
-    width: 60%; 
+    width: 400px; 
     height: auto; 
     object-fit: cover;
     border-radius: 5px;
-    margin: 0px 30px 0px 30px;
+    margin: 0px 0% 0px 30px;
 }
 
 .span-contato{
+    width: 50%;
     color: #009951;
     font-size: 20px;
     font-weight: 500;
     text-align: justify;
-    margin: 100px 30px 0px 30px;
+    margin: 0px 30px 0px 30px;
 }
 
 .h2-contato{
@@ -264,10 +396,16 @@ footer{
 }
 
 .div-copyright p{
-    text-transform: uppercase;
-    font-weight: 700;
+    
+    font-weight: 500;
     color: #80de6a;
     font-size: 20px;
+    transition: .3s all ease;
+}
+
+.div-copyright p:hover{
+    color: #f3f3f3;
+    transition: .3s all ease;
 }
 
 .sociais ul{
@@ -282,3 +420,13 @@ footer{
     color:#80de6a;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+
+.sociais i:hover{
+    transform: scale(1.05);
+    transition: .6s;
+    color:#f3f3f3;
+}
+
+
+
+
