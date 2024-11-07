@@ -305,3 +305,30 @@ footer{
     color: #f1f1f1;
 }
 
+/*Responsividade*/
+
+@media (max-width: 1452px) and (max-height: 737px){
+    #cuidados{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .conteudo-principal p{
+        font-size: 18px;
+    }
+    footer{
+        width: auto;
+        height: 15vh;
+    }
+    .div-copyright p{
+        font-size: 15px;
+        margin-bottom: 0rem;
+    }
+
+    .sociais ul{
+        margin-bottom: 0rem;
+    }
+
+    .sociais i{
+        font-size: 40px;
+    }
+}
