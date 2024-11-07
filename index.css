@@ -55,6 +55,8 @@ nav ul li a {
 
 }
 
+
+
 .img1 {
     height: 50%;
     width: 50%;
@@ -73,19 +75,23 @@ nav ul li a {
     width: 40%;
     margin-left: 10px;
     margin-top: 70px;
-    
+    background-color: #80de6a;
+    border: 3px solid #009951;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: justify;
     }
 
 
 
 
 h1 {
-    color: white;
-    text-decoration: underline;
+    color: #009951;
+    
 }
 
 h5 {
-    color: white;
+    color: #009951;
 }
 
 .cuidados {
@@ -95,14 +101,31 @@ h5 {
 .titc {
     text-align: center;
     margin-bottom: 50px;
+    text-decoration: underline;
+    color: #009951;
     
-    
+}
+
+.textc {
+    background-color: #80de6a;
+    border: 3px solid #009951;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .tita {
     text-align: center;
     margin-bottom: 50px;
     margin-top: 70px;
+    text-decoration: underline;
+    color: #009951;
+}
+
+.texta {
+    background-color: #80de6a;
+    border: 3px solid #009951;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .fots {
@@ -135,6 +158,9 @@ h5 {
 
 .ctit {
     margin-bottom: 60px;
+    text-decoration: underline;
+    color: #009951;
+   
 }
 
 
@@ -147,6 +173,10 @@ h5 {
     width: 50%;
     display: flex;
     flex-direction: column;
+    background-color: #80de6a;
+    border: 3px solid #009951;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .cfot {
@@ -178,3 +208,4 @@ h5 {
     text-align: left;
     width: 30%;
 }
+
