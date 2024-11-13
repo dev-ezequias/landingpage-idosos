@@ -4,21 +4,17 @@
 html {
     scroll-behavior: smooth;
 }
-
 ::-webkit-scrollbar {
     width: 10px;
     background-color: #f1f1f1;
 }
-
 ::-webkit-scrollbar-thumb {
     width: 10px;
     background-color: #009951;
 }
-
 body {
     background-image: linear-gradient(315deg, #d5ddf8, #fff 57%);
 }
-
 #header {
     position: sticky;
     top: 0;
@@ -28,19 +24,16 @@ body {
     z-index: 1000;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
 }
-
 #header a {
     color: white;
     font-size: 18px;
     font-weight: 500;
     margin-right: 20px;
 }
-
 #header a:hover {
     color: #80de6a;
     text-decoration: none;
 }
-
 .assunto-principal {
     display: flex;
     align-items: flex-end;
@@ -51,8 +44,6 @@ body {
     overflow: hidden;
     position: relative;
 }
-
-
 .assunto-principal::before {
     content: " ";
     position: absolute;
@@ -67,7 +58,6 @@ body {
     opacity: .8;
     z-index: 0;
 }
-
 .conteudo-principal {
     position: relative;
     display: flex;
@@ -76,17 +66,22 @@ body {
     z-index: 1;
     width: 100%;
 }
-
 .conteudo-principal h1 {
     padding: 50px 0;
-    color: #fff;
     text-transform: uppercase;
-    font-size: 40px;
+    font-weight: 600;
+    color: #009951;
+    border-radius: 10px;
+    background-color: #c3f9b1;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
-
+.conteudo-principal #cuidados{
+    font-size: 45px;
+}
 .conteudo-principal p {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 10px;
     border: #009951 solid 1px;
     border-radius: 10px;
     background-color: #009951;
@@ -96,13 +91,15 @@ body {
     width: 80%;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
-
+.assunto-principal .conteudo-principal p{
+    font-size: 30px;
+    line-height: 1.2;
+}
 .conteudo-principal p,
 h1 {
     position: relative;
     animation: conteudo-principal 1.5s ease-out forwards;
 }
-
 @keyframes conteudo-principal {
     0% {
         left: -100%;
@@ -112,23 +109,10 @@ h1 {
         left: 0;
     }
 }
-
-#cuidados {
-    font-size: 50px;
-    color: #009951;
-    border: #c3f9b1 solid 1px;
-    border-radius: 10px;
-    background-color: #c3f9b1;
-    padding: 10px;
-    margin-bottom: 50px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-}
-
 .span-bemvindo {
     color: #80de6a;
     font-weight: 700;
 }
-
 .conteudo-secundario {
     display: flex;
     flex-direction: column;
@@ -137,7 +121,6 @@ h1 {
     width: 100%;
     animation: grow 1.5s ease-out forwards;
 }
-
 @keyframes grow {
     0% {
         transform: scale(0.5);
@@ -147,20 +130,17 @@ h1 {
         transform: scale(1);
     }
 }
-
 .conteudo-secundario h2 {
     color: #009951;
     border-left: 5px solid #009951;
     margin: 5px 0px 100px 2px;
     padding-left: 15px;
 }
-
 .conteudo-secundario h3 {
     margin-top: 20px;
     font-size: 20px;
     font-weight: 400;
 }
-
 .conteudo-secundario p {
     width: 100%;
     color: #000000;
@@ -172,13 +152,11 @@ h1 {
     background-color: #aeff95cb;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px, rgba(0, 0, 0, 0.05) 0px 2px 8px;
 }
-
 .conteudo-secundario span {
     color: #000000;
     font-weight: 400;
     margin-top: 20px;
 }
-
 .conteudo-secundario img {
     width: 100%;
     height: auto;
@@ -187,71 +165,57 @@ h1 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-bottom: 30px;
 }
-
 .conteudo-secundario img:hover {
     transform: scale(1.03);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 20px;
 }
-
 .span-conteudo-secundario {
     font-size: 30px;
 }
-
 .conteudo-secundario button {
     font-size: 26px;
 }
-
 #nutricao {
     background-color: #fff;
     border-radius: 0px;
 }
-
 #nutricao h2 {
     color: #009951;
     border-left: 5px solid #f1f1f1;
 }
-
 .accordion-item {
     background-color: transparent;
 }
-
 .accordion-item button {
     margin-bottom: 20px;
 }
-
 .accordion-header {
     padding-bottom: 20px;
 }
-
 .accordion-button {
     background-color: #adff95;
     color: #000000;
     transition: 0.5s;
 }
-
 .accordion-button:hover {
     background-color: #a6e6a1;
     transform: scale(1.02);
 }
-
 .accordion-button:focus,
 .accordion-button:active {
     background-color: #adff95 !important;
-    color: #fff;
+    color: #000000;
     border-color: #009951 !important;
     box-shadow: none;
     transform: scale(1);
 }
-
 .accordion-button.collapsed {
     background-color: #009951;
-    color: #f1f1f1;
+    color: #000000;
 }
-
 .accordion-button.collapsed:hover {
     background-color: #a6e6a1;
 }
-
 #accordionFlushExample img {
     display: block;
     margin-left: auto;
@@ -260,7 +224,6 @@ h1 {
     max-width: 100%;
     height: auto;
 }
-
 .conteudo-contato {
     display: flex;
     flex-direction: column;
@@ -268,12 +231,10 @@ h1 {
     background-image: linear-gradient(161.15deg, #30B486 12.73%, #5EEAB9 72.95%);
     padding: 30px;
 }
-
 .conteudo-contato {
     position: relative;
     animation: slideIn 1.5s ease-out forwards;
 }
-
 @keyframes slideIn {
     0% {
         left: -100%;
@@ -283,12 +244,10 @@ h1 {
         left: 0;
     }
 }
-
 .textoeimagem {
     display: flex;
     align-items: center;
 }
-
 .textoeimagem img {
     width: 400px;
     height: auto;
@@ -296,7 +255,6 @@ h1 {
     border-radius: 5px;
     margin-left: 100px;
 }
-
 .span-contato {
     width: 40%;
     color: #ffffff;
@@ -306,7 +264,6 @@ h1 {
     margin: 0px 30px 0px 30px;
     line-height: 1.5;
 }
-
 .h2-contato {
     display: flex;
     flex-direction: column;
@@ -315,15 +272,13 @@ h1 {
     margin: 5px 0px 30px 2px;
     padding-left: 15px;
 }
-
 .h2-contato h2 {
     color: #ffffff;
     border-left: 5px solid #009951;
     text-transform: uppercase;
     padding-left: 15px;
 }
-
-.fakebutton {
+.formulario-de-contato {
     background-color: #009951;
     color: #fff;
     border-radius: 5px;
@@ -332,12 +287,10 @@ h1 {
     cursor: pointer;
     transition: .3s all ease;
 }
-
-.fakebutton:hover {
+.formulario-de-contato:hover {
     border: 1px solid #009951;
     transition: .3s all ease;
 }
-
 footer {
     display: flex;
     flex-direction: row;
@@ -348,50 +301,41 @@ footer {
     color: #fff;
     padding: 5px 0;
 }
-
 .sociais {
     display: flex;
     justify-content: center;
     width: 50%;
 }
-
 .div-copyright {
     display: flex;
     justify-content: center;
     width: 50%;
 }
-
 .div-copyright p {
-
     font-weight: 500;
     color: #80de6a;
     font-size: 20px;
     transition: .3s all ease;
 }
-
 .div-copyright p:hover {
     color: #f3f3f3;
     transition: .3s all ease;
 }
-
 .sociais ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
 }
-
 .sociais i {
     font-size: 30px;
     color: #ffffff;
     margin: 0 15px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
-
 .sociais i:hover {
     color: #80de6a;
     transform: scale(1.1);
 }
-
 #header {
     position: sticky;
     top: 0;
@@ -401,16 +345,13 @@ footer {
     z-index: 1000;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
 }
-
 #button-contato-nav {
     border: 1px solid #fff;
     border-radius: 10px;
 }
-
 #navbarNav {
     justify-content: center;
 }
-
 .bi-heart-pulse {
     color: #c3f9b1;
     font-size: 50px;
@@ -418,59 +359,47 @@ footer {
 }
 
 /*Responsividade*/
-
 @media (max-width: 1452px) and (max-height: 737px) {
     #cuidados {
         font-size: 20px;
         margin-bottom: 30px;
     }
-
     .conteudo-principal p {
         font-size: 18px;
     }
-
     footer {
         width: auto;
         height: 15vh;
     }
-
     .div-copyright p {
         font-size: 15px;
         margin-bottom: 0rem;
     }
-
     .sociais ul {
         margin-bottom: 0rem;
     }
-
     .sociais i {
         font-size: 40px;
     }
-
     #button-contato-nav {
         width: 80px;
         padding-right: 3px;
     }
 }
-
 @media (max-width: 768px) {
-
     .conteudo-contato {
         padding: 20px;
         margin: 0 20px;
     }
-
     .textoeimagem {
         flex-direction: column;
         align-items: flex-start;
     }
-
     .textoeimagem img {
         width: 100%;
         height: auto;
         margin: 20px 0;
     }
-
     .span-contato {
         width: 100%;
         font-size: 16px;
@@ -478,77 +407,62 @@ footer {
         margin: 0 0 20px 0;
         line-height: 1.4;
     }
-
-    .fakebutton {
+    .formulario-de-contato {
         padding: 12px;
         font-size: 18px;
     }
-
     .h2-contato h2 {
         font-size: 22px;
         margin-bottom: 20px;
     }
-
     #cuidados {
         font-size: 20px;
         margin-bottom: 30px;
     }
-
     .conteudo-principal p {
         font-size: 15px;
         line-height: 1;
     }
-
     footer {
         width: auto;
         height: 15vh;
     }
-
     .div-copyright p {
         font-size: 15px;
         margin: 0px 0px 0px 15px;
     }
-
     .sociais ul {
         margin-bottom: 0px;
         padding: 0px;
     }
-
     .sociais i {
         font-size: 40px;
     }
-
     #button-contato-nav {
         width: 80px;
         padding-left: 5px;
     }
 }
-
 @media (max-width: 480px) {
     .conteudo-contato {
         padding: 15px;
         margin: 0 10px;
     }
-
     .span-contato {
         font-size: 18px;
         margin: 0 0 10px 0;
     }
-
-    .fakebutton {
+    .formulario-de-contato {
         padding: 10px;
         font-size: 16px;
     }
-
     .textoeimagem {
         flex-direction: column;
     }
-
     .textoeimagem img {
         width: 100%;
         margin: 10px 0;
     }
-
     #button-contato-nav {
         width: 80px;
         padding-right: 3px;
